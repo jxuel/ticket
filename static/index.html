@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hello Ticket</title>
+    <script type="text/javascript">
+        getter = setInterval(()=>{
+            if (document.cookie != "") {
+                document.getElementById("cookie").innerHTML = document.cookie
+                clearInterval(getter);
+            }
+        }, 10);
+        window.wasmbinsrc = "ticket.wasm";
+    </script>
+    <script src="f.031a537.js"></script>
+  </head>
+  <body>
+    <h1>Refresh to get a new _ticket</h1>
+    <h1 id ="cookie"></h1>
+  </body>
+</html>
